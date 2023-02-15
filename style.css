@@ -164,4 +164,39 @@ nav {
         text-align: center;
 
     }
+
 }
+
+
+@media(max-width:414px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio h1 {
+        font-size: 3rem;
+    }
+
+
+    .inicio p {
+        font-size: 1rem;
+    }
+
+
+    .imagenp {
+        display: none;
+    }
+
+    .inicio {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        width: 100vw;
+        height: 80vh;
+        margin-left: 0px;
+
+    }
+
+}
+
