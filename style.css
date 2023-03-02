@@ -5,6 +5,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
+    list-style: none;
+
 }
 
 /* Barra Inicial */
@@ -100,8 +102,8 @@ nav {
 .about {
     width: 100%;
     height: 100vh;
-    padding: 78px 0px;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./img/IMG_20221028_153652.jpg);
+    /* padding: 78px 0px; */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./img/IMG_20221028_153652\ \(3\).jpg);
     background-position: top;
     background-size: cover;
     transition: all .3s;
@@ -199,13 +201,12 @@ button:hover {
 
 /* Proyectos INICIO */
 .Proyectos {
-    /* background-color: #e5e5f7; */
-    /* opacity: 0.8; */
-    /* background: #C9CCD3; */
+ 
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./img/pro1/fondoo.avif);
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -268,6 +269,250 @@ button:hover {
 
 
 /* Proyectos FINAL */
+
+
+/* CARDS INICIO */
+
+.bodycard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f3f1f5;
+}
+
+.card{
+    margin: 20px;
+    width: 600px;
+    height: 380px;
+    border-radius: 5px;
+    background: var(--i);
+    background-size:cover;
+    background-repeat: no-repeat;
+    box-shadow:3px 5px 5px rgba(3, 32, 51, .8) ;
+    overflow: hidden;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .5s;
+}
+
+/* BOTON RETURN CARD INICIO */
+.return img{
+    width: 50px;
+}
+.return{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.return p{
+    color: #f9004d;
+
+}
+/* BOTON RETURN CARD FINAL */
+
+.content h2, a, p{
+    color: rgba(255, 255, 255, .8);
+    margin: 10px 0;
+}
+
+
+.card:hover .content{
+    opacity: 1;
+}
+/* CARDS FINAL */
+
+
+/* Skills */
+
+
+/* INICIO SKILLS BARRAS */
+/* .skil{
+    width: 100vw;
+    height: 100vh;
+} */
+.skills{
+    margin-top: 100px;
+    background: #333;
+    text-transform: uppercase;
+    width: 90vw;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.skills li{
+    margin: 20px 0;
+    padding: 10px;
+}
+.skills h1{
+    text-align: center;
+}
+
+.skills h3{
+    margin: 5px;
+}
+
+.skills h4{
+    margin: 5px;
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%,rgba(252, 103, 103, 1)100%);
+}
+
+.HTML{
+    width: 90%;
+    animation: html 3s;
+}
+
+.CSS{
+    width: 50%;
+    animation: css 3s;
+}
+
+
+.JAVASCRIPT{
+    width: 15%;
+    animation: javascript 3s;
+}
+
+
+.BOOTSTRAP{
+    width: 40%;
+    animation: bootstrap 3s;
+}
+
+.MYSQL{
+    width: 20%;
+    animation: mysql 3s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 15%;
+    }
+}
+
+@keyframes bootstrap{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+@keyframes mysql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+/* FINAL SKILLS BARRAS */
+
+@media (max-width:800px) {
+    .container h2 {
+        font-size: 60px;
+        letter-spacing: 19px;
+        line-height: 35px;
+    }
+
+    .container h2 span {
+        font-size: 26px;
+    }
+}
+
+/* Skills FINAL */
+
+/* Skills logo */
+
+.logos{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logos img{
+    margin-top: 10px;
+    height: 12rem;
+}
+
+@media(max-width:1100px) {
+    .logos{
+        height: 900px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .logos img{
+        margin: 0px;
+        height: 8rem;
+        width: 8rem;
+    }
+
+
+}
+
+
+/* Skills logo */
 
 
 /* MEDIAS PANTALLA */
@@ -394,9 +639,52 @@ button:hover {
 
 }
 
+
+/* Animacion Return */
+  .return{
+    animation-name: return;
+    animation-duration: 1s;
+    position: relative;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes return{
+    /* 0% {top:0px;}
+    25% {top:5px;}
+    50% {top:10px;}
+    75% {top:15;}
+    100% {top:20px;} */
+
+    /* 25%{top: 1%;}
+    50%{top: 1.5%;}
+    75%{top: 2%;}
+    100%{top: 2.5%;}
+    75%{top: 2%;}
+    50%{top: 1.5%;}
+    25%{top: 1%;} */
+
+
+    0%{bottom:0px;}
+    25%{bottom: 5px;}
+    50%{bottom: 8px;}
+    75%{bottom: 5px;}
+    85%{bottom: 3px;}
+    100%{bottom: 0px;}
+
+
+
+  }
+/* Animacion Return */
+
+
 /* MEDIAS ABOUT */
 @media(max-width:414px) {
 
+    .about{
+        padding: 0;
+    }
 
 
     header {
@@ -505,6 +793,21 @@ button:hover {
 
 /* Final Media Pro */
 
+/* MEDIA PROYECTOS INICIO */
+@media(max-width:1116px) {
+
+    .bodycard{
+        flex-direction: column;
+    }
+    .card{
+width: 20rem;
+height: 15rem;
+    }
+
+
+}
+
+/* MEDIA PROYECTOS FINAL */
 
 @media screen and (max-width: 1080px), 
        screen and (max-height: 2400px) {

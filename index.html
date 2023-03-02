@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,48 +8,117 @@
     <title>Profrile</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div id="inicio"></div>
     <header>
+
         <nav>
-    <div class="Logo">
-        Port<span>folio</span>
-    </div>
-        <div class="menu">
-            <a href="#">INICIO</a>
-            <a href="#about">SOBRE MI</a>
-            <a class="proy" href="#propro">PROYECTOS</a>
-            <a href="./skills/index.html">SKILLS</a>
-        </div>
-    </nav>
+            <div class="Logo">
+                Port<span>folio</span>
+            </div>
+            <div class="menu">
+                <a href="#">INICIO</a>
+                <a href="#about">SOBRE MI</a>
+                <a class="proy" href="#propro">PROYECTOS</a>
+                <a href="#skills">SKILLS</a>
+            </div>
+        </nav>
 
-    <div class="inicio">
-        <h3>Hello</h3>
-        <h1>I'm <span class="multiText"></span></h1>
-        <p>Ingeniero en busca de integrarme al mundo Tech.</p>  
-        </div>
-    </div>
 
+        <div class="inicio">
+            <h3>Hello</h3>
+            <h1>I'm <span class="multiText"></span></h1>
+            <p>Ingeniero en busca de integrarme al mundo Tech.</p>
+        </div>
+        </div>
+
+
+    </header>
+
+    <div id="about"></div>
+
+    <section class="about">
+        <div class="main">
+            <!-- <img class="imgp" src="../profrile/img/WhatsApp Image 2022-07-18 at 8.00.49 PM.jpeg" alt=""> -->
+            <div class="about-text">
+                <h1>About me</h1>
+                <h5><span>Developer</span> and Designer</h5>
+                <p>Mi nombre es Kevin y soy un ingeniero con muchas ganas de integrarme al mundo tech. Desarrolle un
+                    amor por el ambito de Front-End despues de empezar con prototipados basicos, cuento con muchas ganas
+                    de aprender y ser parte de un gran equipo de trabajo.</p>
+                <!-- <button type="button">Descargar CV</button> -->
+                <a class="CV" download="KEVINHGCV" href="./KEVINHGCV.pdf">Descarga CV</a>
+            </div>
+
+        </div>
+        <section class="return">
+            <a href="#inicio">
+                <img  src="./img/return.png" alt="">
+            </a>
+        </section>
+    </section>
+
+    <div id="skills"></div>
+
+    <section class="skil">
+
+        <div class="logos">
+            <img src="./img/logohtml.png" alt="">
+        
+            <img src="./img/logocss.png" alt="">
+        
+            <img src="./img/logojavascript.png" alt="">
     
-</header>
+            <img src="./img/bootstrap-icon-png-11.jpg" alt="">
 
-<div id="about"></div>
+            <img src="https://www.pngkey.com/png/full/269-2693201_mysql-logo-circle-png.png" alt="">
+        </div>
 
-<section class="about">
-    <div class="main">
-        <!-- <img class="imgp" src="../profrile/img/WhatsApp Image 2022-07-18 at 8.00.49 PM.jpeg" alt=""> -->
-    <div class="about-text">
-        <h1>About me</h1>
-        <h5><span>Developer</span> and Designer</h5>
-    <p>Mi nombre es Kevin y soy un ingeniero con muchas ganas de integrarme al mundo tech. Desarrolle un amor por el ambito de Front-End despues de empezar con prototipados basicos, cuento con muchas ganas de aprender y ser parte de un gran equipo de trabajo.</p>  
-        <!-- <button type="button">Descargar CV</button> -->
-        <a class="CV" download="KEVINHGCV" href="./KEVINHGCV.pdf">Descarga CV</a>
-    </div>
-    </div>
+        <div class="skills">
+            <h1>My Skills</h1>
 
-</section>
+            <li>
+                <h3>HTML</h3>
+                <h4>90%</h4>
+                <span class="bar"><span class="HTML"></span></span>
+            </li>
 
-<div id="propro"></div>
-<section class="Proyectos">
+            <li>
+                <h3>CSS</h3>
+                <h4>50%</h4>
+                <span class="bar"><span class="CSS"></span></span>
+            </li>
+
+            <li>
+                <h3>JavaScript</h3>
+                <h4>15%</h4>
+                <span class="bar"><span class="JAVASCRIPT"></span></span>
+            </li>
+
+            <li>
+                <h3>Bootstrap</h3>
+                <h4>40%</h4>
+                <span class="bar"><span class="BOOTSTRAP"></span></span>
+            </li>
+
+            <li>
+                <h3>MySQL</h3>
+                <h4>20%</h4>
+                <span class="bar"><span class="MYSQL"></span></span>
+            </li>
+
+        </div>
+
+        <section class="return">
+            <a href="#inicio">
+            <img src="./img/return.png" alt="">
+        </a>
+    </section>
+    </section>
+
+
+    <!-- <section class="Proyectos">
     <div class="mainpro">
         <div class="primer">
             <img src="./img/pro1/1.png" alt="">
@@ -58,20 +128,61 @@
             <a href="">Source code</a>
         </div>
     </div>
+
+    <section class="return">
+        <a href="#inicio">
+        <img src="./img/return.png" alt="">
+    </a>
+    <p>Return Principal</p> 
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</section> -->
 
-<script>
-    
-var typed = new Typed('.multiText', {
-  strings: ["Kevin","coder.", "youtuber.","designer."],
-  loop: true,
-        typeSpeed: 100,
-        backSpeed: 80,
-        backDelay: 1500
-});
-</script>
+
+    <div id="propro"></div>
+    <section class="bodycard">
+        <div class="card" style="--i:url(./img/pro1/1.png)">
+            <div class="content">
+                <h2>Copia Login Apple</h2>
+                <p>Bootstrap</p>
+                <a href="#">Source Code</a>
+                <a href="#">Live Preview</a>
+            </div>
+        </div>
+
+
+        <div class="card" style="--i:url(./img/pro1/1.png)">
+            <div class="content">
+                <h2>Paisaje</h2>
+                <a href="#">Source Code</a>
+                <a href="#">Live Preview</a>
+            </div>
+        </div>
+
+
+        <section class="return">
+            <a href="#inicio">
+                <img src="./img/return.png" alt="">
+            </a>
+        </section>
+
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+
+        var typed = new Typed('.multiText', {
+            strings: ["Kevin", "coder.", "youtuber.", "designer."],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500
+        });
+    </script>
 
 </body>
+
 </html>
