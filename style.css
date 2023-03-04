@@ -500,6 +500,11 @@ button:hover {
     height: 12rem;
 }
 
+.logos img:hover{
+    transition: all 1s;
+    transform: rotateY(360deg);
+}
+
 @media(max-width:1100px) {
     .logos{
         height: 900px;
@@ -516,10 +521,6 @@ button:hover {
         width: 8rem;
     }
 
-    .logos img:hover{
-        transition: all 3s;
-        transform: rotateY(360deg);
-    }
 
 }
 
