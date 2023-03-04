@@ -281,6 +281,14 @@ button:hover {
     background: #f3f1f5;
 }
 
+.bodycard2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: black;
+}
+
 .card{
     margin: 20px;
     width: 600px;
@@ -508,6 +516,10 @@ button:hover {
         width: 8rem;
     }
 
+    .logos img:hover{
+        transition: all 3s;
+        transform: rotateY(360deg);
+    }
 
 }
 
@@ -796,7 +808,7 @@ button:hover {
 /* MEDIA PROYECTOS INICIO */
 @media(max-width:1116px) {
 
-    .bodycard{
+    .bodycard,.bodycard2{
         flex-direction: column;
     }
     .card{
