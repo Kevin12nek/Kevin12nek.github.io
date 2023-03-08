@@ -291,12 +291,13 @@ button:hover {
 
 .card{
     margin: 20px;
-    width: 600px;
-    height: 380px;
+    width: 700px;
+    height: 400px;
     border-radius: 5px;
     background: var(--i);
     background-size:cover;
     background-repeat: no-repeat;
+    background-position: center;
     box-shadow:3px 5px 5px rgba(3, 32, 51, .8) ;
     overflow: hidden;
 }
